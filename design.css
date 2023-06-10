@@ -4,8 +4,9 @@ body {
 .box {
    display: flex; 
    flex-direction: row; 
-    margin: 200px;
+    margin: auto;
     margin-top: 100px;
+    justify-content: center;
 }
 #mid_box {
     background-color: hsl(184, 100%, 22%);

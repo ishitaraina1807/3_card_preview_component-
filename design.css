@@ -1,51 +1,55 @@
+*{
+    margin: 0px;
+}
 body {
     background-color: hsl(0, 0%, 95%);
 }
 .box {
-   display: flex; 
-   flex-direction: row; 
+    display: flex;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 8rem;
     justify-content: center;
+}
+.left_box {
+    padding: 3rem;
+    background-color: hsl(31, 77%, 52%);
+    max-width: 10rem;
+    height: auto;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 .mid_box {
     background-color: hsl(184, 100%, 22%);
-    width: 350px;
-    height: 530px;
-}
-
-.left_box {
-    background-color: hsl(31, 77%, 52%);
-    width: 350px;
-    height: 530px;
+    max-width: 10rem;
+    height: auto;
+    padding: 3rem;
 }
 
 .right_box {
     background-color: hsl(179, 100%, 13%);
-    width: 350px;
-    height: 530px;
+    max-width: 10rem;
+    height: auto;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 3rem;
 }
 
 .img {
-    margin-top: 45px;
-    margin-left: 45px;
+    max-width: 3.3rem;
 }
 
 .h1 {
     color: hsl(0, 0%, 95%);
-    margin-left: 45px;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 .para {
     color: hsla(0, 0%, 100%, 0.75);
-    margin-left: 45px;
-    margin-right: 80px;
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 1rem;
-    line-height: 25px;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
     justify-content: center;
+    font-weight: 500;
 
 }
 
@@ -55,14 +59,12 @@ body {
     border: solid hsl(0, 0%, 95%);
     color: hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 1rem;
-    border-radius: 50px;
-    justify-content: center;
-    margin-left: 45px;
-    margin-right: 130px;
-    margin-top: 100px;
-    padding: 13px;
+    font-size: 0.8rem;
     text-align: center;
+    margin-top: 4rem;
+    padding: 0.6rem 0.8rem ;
+    width: 6rem;
+    border-radius: 3rem;
 }
 
 .footer1:hover {
@@ -79,3 +81,30 @@ body {
     background-color: hsl(0, 0%, 95%);
     color: hsl(179, 100%, 13%);
 }
+@media screen and (max-width: 440px) {
+    
+    body{
+        padding: 2rem;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .left_box, .mid_box, .right_box{
+        max-width: 800px;
+    }
+    .left_box{
+        border-radius: 0.5rem 0.5rem 0 0 ;
+    }
+    .right_box{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .footer1, .footer2, .footer3{
+        margin-top: 1rem;
+    }
+   
+}
+
+
+
